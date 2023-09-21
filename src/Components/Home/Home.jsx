@@ -14,6 +14,24 @@ const Home = () => {
             <a href='#'>Explore Now</a>
           </button>
         </div>
+
+        <div className='homeCard grid'>
+          <div className='locationDiv'>
+            <label htmlFor='location'>Location</label>
+            <input type='text' placeholder='Dream Destination' />
+          </div>
+
+          <div className='distDiv'>
+            <label htmlFor='distance'>Location</label>
+            <input type='text' placeholder='11/Meters' />
+          </div>
+
+          <div className='priceDiv'>
+            <label htmlFor='price'>Location</label>
+            <input type='text' placeholder='$140-$500' />
+          </div>
+          <button className='btn'>Search</button>
+        </div>
       </div>
     </section>
   )
