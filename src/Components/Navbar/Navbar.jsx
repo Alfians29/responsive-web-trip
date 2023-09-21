@@ -5,18 +5,18 @@ import { AiFillCloseCircle } from 'react-icons/ai'
 import { TbGridDots } from 'react-icons/tb'
 
 const Navbar = () => {
-  // code to toggle/show navBar
+  // show navBar
   const [active, setActive] = useState('navBar')
   const showNav = () => {
     setActive('navBar activeNavbar')
   }
 
-  // code to remove Navbar
+  // remove navBar
   const removeNav = () => {
     setActive('navBar')
   }
 
-  // code to add background color to the header
+  // add background color when scroll down
   const [transparent, setTransparent] = useState('header')
   const addBg = () => {
     if (window.scrollY >= 10) {
@@ -40,33 +40,33 @@ const Navbar = () => {
         </div>
 
         <div className={active}>
-          <ul className='navList flex'>
+          <ul className='navLists flex'>
             <li className='navItem'>
-              <a href='#' className='navlink'>
+              <a href='#' className='navLink'>
                 Home
               </a>
             </li>
 
             <li className='navItem'>
-              <a href='#' className='navlink'>
+              <a href='#' className='navLink'>
                 Products
               </a>
             </li>
 
             <li className='navItem'>
-              <a href='#' className='navlink'>
-                Resource
+              <a href='#' className='navLink'>
+                Resources
               </a>
             </li>
 
             <li className='navItem'>
-              <a href='#' className='navlink'>
+              <a href='#' className='navLink'>
                 Contact
               </a>
             </li>
 
             <li className='navItem'>
-              <a href='#' className='navlink'>
+              <a href='#' className='navLink'>
                 Blog
               </a>
             </li>

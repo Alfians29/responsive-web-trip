@@ -30,6 +30,7 @@ const Home = () => {
             <label htmlFor='price'>Location</label>
             <input type='text' placeholder='$140-$500' />
           </div>
+
           <button className='btn'>Search</button>
         </div>
       </div>
