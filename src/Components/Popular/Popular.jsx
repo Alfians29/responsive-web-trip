@@ -11,34 +11,38 @@ import img5 from '../../Assets/image (5).jpg'
 import img7 from '../../Assets/image (5).png'
 import img9 from '../../Assets/image (9).jpg'
 
-// array method to display all the destination using map
+// array method to display all the destination using (map)
 const Data = [
   {
     id: 1,
     imgSrc: img2,
     destTitle: 'Fontana di Trevi',
-    location: 'Rome, Italy',
+    locCity: 'Rome',
+    locCountry: 'Italy',
     grade: 'CULTURAL RELAX',
   },
   {
     id: 2,
     imgSrc: img5,
     destTitle: 'Metro Over Street',
-    location: 'Chicago, USA',
+    locCity: 'Chicago',
+    locCountry: 'United States',
     grade: 'CULTURAL RELAX',
   },
   {
     id: 3,
     imgSrc: img7,
     destTitle: 'Serengeti National Park',
-    location: 'Simiyu, Tanzania',
+    locCity: 'Simiyu',
+    locCountry: 'Tanzania',
     grade: 'CULTURAL RELAX',
   },
   {
     id: 4,
     imgSrc: img9,
     destTitle: 'Kaghan Valley',
-    location: 'Mansehra, Pakistan',
+    locCity: 'Mansehra',
+    locCountry: 'Pakistan',
     grade: 'CULTURAL RELAX',
   },
 ]
@@ -63,7 +67,7 @@ const Popular = () => {
         </div>
 
         <div className='mainContent grid'>
-          {Data.map(({ id, imgSrc, destTitle, location, grade }) => {
+          {Data.map(({ id, imgSrc, destTitle, locCity, locCountry, grade }) => {
             return (
               <div className='singleDestination'>
                 <div className='destImage'>
@@ -71,7 +75,9 @@ const Popular = () => {
 
                   <div className='overlayInfo'>
                     <h3>{destTitle}</h3>
-                    <p>{location}</p>
+                    <p>
+                      {locCity}, {locCountry}
+                    </p>
 
                     <BsArrowRightShort className='icon' />
                   </div>
@@ -81,7 +87,7 @@ const Popular = () => {
                   <div className='number'>0{id}</div>
 
                   <div className='destText flex'>
-                    <h6>{location}</h6>
+                    <h6>{locCountry}</h6>
                     <span className='flex'>
                       <span className='dot'>
                         <BsDot className='icon' />
