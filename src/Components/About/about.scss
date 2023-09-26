@@ -24,15 +24,15 @@
   }
 
   .mainContent {
-    gap: 1rem;
+    gap: 2rem;
     .singleItem {
       text-align: center;
 
       img {
         background: rgba(247, 144, 54, 0.265);
-        width: 100%;
+        width: 50%;
         border-radius: 50%;
-        padding: 0.5rem;
+        padding: 0.05rem;
       }
 
       h3 {
