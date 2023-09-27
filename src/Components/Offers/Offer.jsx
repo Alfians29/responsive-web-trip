@@ -1,5 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './offer.css'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 import { MdKingBed } from 'react-icons/md'
 import { MdBathtub } from 'react-icons/md'
@@ -42,10 +45,15 @@ const Offers = [
 ]
 
 const Offer = () => {
+  // animation using Aos
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+
   return (
     <section className='offer container section'>
       <div className='secContainer'>
-        <div className='secIntro'>
+        <div data-aos='fade-up' data-aos-duration='2000' className='secIntro'>
           <h2 className='secTitle'>Special Offers</h2>
           <p>
             From historical cities to natural spectaculars, come see the best of
@@ -57,7 +65,11 @@ const Offer = () => {
           {Offers.map(
             ({ id, imgSrc, destTitle, location, price, discount }) => {
               return (
-                <div className='singleOffer'>
+                <div
+                  data-aos='fade-up'
+                  data-aos-duration='3000'
+                  className='singleOffer'
+                >
                   <div className='destImage'>
                     <img src={imgSrc} alt={destTitle} />
 

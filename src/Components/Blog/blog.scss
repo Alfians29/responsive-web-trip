@@ -14,9 +14,9 @@
 
 .blog {
   .mainContainer {
-    gap: 1rem;
+    gap: 3rem;
     .singlePost {
-      gap: 2rem;
+      gap: 1.5rem;
 
       .imgDiv {
         height: 200px;
@@ -67,6 +67,15 @@
           }
         }
       }
+    }
+  }
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 884px) {
+  .blog {
+    .mainContainer {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

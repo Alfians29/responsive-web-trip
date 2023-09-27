@@ -13,10 +13,10 @@
 }
 
 .blog .mainContainer {
-  gap: 1rem;
+  gap: 3rem;
 }
 .blog .mainContainer .singlePost {
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .blog .mainContainer .singlePost .imgDiv {
   height: 200px;
@@ -57,4 +57,11 @@
 }
 .blog .mainContainer .singlePost a:hover .icon {
   transform: translateX(10px);
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 884px) {
+  .blog .mainContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=blog.css.map */
